@@ -32,7 +32,6 @@ document.addEventListener('click', function(e) {
   }
 });
 
-
 window.addEventListener("hashchange", function () {
   var windowheight = window.innerHeight;
   window.scrollTo(window.scrollX, window.scrollY - 400);

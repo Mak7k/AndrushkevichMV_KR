@@ -60,7 +60,7 @@
 
 
 nav{
-    padding: 1px 5px;   
+     
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -106,7 +106,6 @@ nav label {
     visibility: hidden;
     padding: 1px 5px;
     cursor: pointer;
-
     border: 1px solid transparent;
 }
 
@@ -157,7 +156,6 @@ nav li::after,nav li::before {
 }
     input[type="checkbox"]:checked ~ label + ul {
         display: block;
-        
     } 
 }
 
@@ -232,15 +230,14 @@ nav ul li div{
 }
 
 @media (max-width: 570px) {
+    body{
+        background-position: center center;
+    }
     .main-list{
         background-color: #64cadee0;
-        width: 100%;
+        width: 95%;
         margin: auto;
         margin: 0;
-    }
-
-    .block-person img{
-        display: none;
     }
 
     nav img{
@@ -248,10 +245,11 @@ nav ul li div{
         width: 0px;
         height: 0px;
     }
-
     .full-screen{
         display: none;
     }
+
+   
 }
 
 .hr-double {
@@ -610,4 +608,14 @@ nav ul li div{
 .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+}
+
+
+@media (max-width: 570px) {
+    .text_person{
+        font-size: 15px;
+    }
+    .block-person img{
+        width: 100px;
+    }
 }
